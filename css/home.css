@@ -81,7 +81,7 @@
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
 
 .hero-title {
-  font-family: 'Cormorant Garant', serif;
+  font-family: 'Butler', 'Cormorant Garant', serif;
   font-size: clamp(2.4rem, 3.8vw, 4.2rem);
   font-weight: 700;
   color: var(--white);
@@ -366,7 +366,7 @@
 .service-main-card:hover .smc-bg-img { transform: scale(1.06); }
 .smc-icon { font-size: 3.5rem; margin-bottom: 16px; }
 .smc-icon-svg { margin-bottom: 20px; display: flex; align-items: center; }
-.smc-content h3 { font-family: 'Bodoni Moda', serif; font-size: 1.8rem; color: var(--white); margin-bottom: 12px; }
+.smc-content h3 { font-family: 'Butler', 'Bodoni Moda', serif; font-size: 1.8rem; color: var(--white); margin-bottom: 12px; }
 .smc-content p { font-size: 0.95rem; color: rgba(255,255,255,0.75); margin-bottom: 24px; line-height: 1.6; }
 .smc-service-list {
   display: grid;
@@ -475,7 +475,7 @@
 }
 .cta-content { position: relative; z-index: 2; }
 .cta-title {
-  font-family: 'Bodoni Moda', serif;
+  font-family: 'Butler', 'Bodoni Moda', serif;
   font-size: clamp(2rem, 4.5vw, 3.5rem);
   font-weight: 700; color: var(--white);
   line-height: 1.15; margin-bottom: 20px;
