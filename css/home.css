@@ -35,9 +35,9 @@
   position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(
     105deg,
-    rgba(0,0,0,0.72) 0%,
-    rgba(0,0,0,0.45) 45%,
-    rgba(0,0,0,0.15) 100%
+    rgba(0,0,0,0.85) 0%,
+    rgba(0,0,0,0.75) 45%,
+    rgba(0,0,0,0.5) 100%
   );
 }
 
@@ -106,9 +106,9 @@
   padding: 16px 36px;
   font-size: 1.05rem;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid rgba(255, 255, 255, 0.25);
-  color: var(--white);
+  background: var(--gold-gradient);
+  border: 1.5px solid transparent;
+  color: var(--navy-dark);
   border-radius: var(--radius-sm);
   transition: all 0.3s ease;
   display: inline-flex;
@@ -116,13 +116,12 @@
   justify-content: center;
   cursor: pointer;
   text-decoration: none;
+  box-shadow: var(--shadow-gold);
 }
 .btn-hero-nav:hover, .btn-hero-nav:active {
-  background: var(--gold-gradient);
-  border-color: transparent;
-  color: var(--navy-dark);
   box-shadow: var(--shadow-gold-lg);
   transform: translateY(-3px);
+  filter: brightness(1.05);
 }
 
 .hero-sub {
@@ -349,55 +348,63 @@
 
 .smc-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(0,10,40,0.9) 0%, rgba(0,10,40,0.3) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(4,9,30,0.95) 0%, rgba(4,9,30,0.4) 70%, transparent 100%);
+  transition: opacity 0.6s ease;
+  pointer-events: none;
 }
 .smc-content {
   position: absolute; bottom: 0; left: 0; right: 0;
   padding: 40px;
 }
 /* Real photo overlay in services split */
-.smc-image { position: relative; overflow: hidden; }
+.smc-image { position: relative; overflow: hidden; min-height: 520px; }
 .smc-bg-img {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, filter 0.6s ease, opacity 0.6s ease;
+  filter: grayscale(100%);
+  opacity: 0.25;
 }
-.service-main-card:hover .smc-bg-img { transform: scale(1.06); }
+.service-main-card:hover .smc-bg-img { 
+  transform: scale(1.06); 
+  filter: grayscale(0%);
+  opacity: 0.85;
+}
+.service-main-card:hover .smc-overlay {
+  opacity: 0.7;
+}
+
 .smc-icon { font-size: 3.5rem; margin-bottom: 16px; }
 .smc-icon-svg { margin-bottom: 20px; display: flex; align-items: center; }
 .smc-content h3 { font-family: 'Butler', 'Bodoni Moda', serif; font-size: 1.8rem; color: var(--white); margin-bottom: 12px; }
 .smc-content p { font-size: 0.95rem; color: rgba(255,255,255,0.75); margin-bottom: 24px; line-height: 1.6; }
-.smc-service-list {
+
+.smc-bullet-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
-  background: var(--white);
-  border-top: none;
+  gap: 16px 12px;
+  margin-bottom: 32px;
+  list-style: none;
+  padding: 0;
 }
-.ssl-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 11px 20px;
-  border-bottom: 1px solid var(--bg-grey);
-  border-right: 1px solid var(--bg-grey);
-  transition: var(--transition);
-  cursor: default;
-}
-.ssl-item:nth-child(even) { border-right: none; }
-.ssl-item:hover { background: linear-gradient(90deg, rgba(212,175,55,0.06), transparent); border-color: rgba(212,175,55,0.25); }
-.ssl-icon {
-  font-size: 1.1rem;
-  flex-shrink: 0;
-  width: 24px;
-  text-align: center;
-}
-.ssl-item span:last-child {
-  font-size: 0.85rem;
+.smc-bullet-list li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 0.88rem;
   font-weight: 600;
-  color: var(--navy-primary);
-  line-height: 1.3;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 0.05em;
+}
+.smc-bullet-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold-light);
 }
 
 /* ---- Industries ---- */
