@@ -137,10 +137,10 @@ section { padding: 60px 40px; }
 .container { max-width: 1400px; margin: 0 auto; }
 .section-badge {
   display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(212,175,55,0.1);
-  border: 1px solid var(--border-light);
-  color: var(--gold-light);
-  font-size: 0.75rem; font-weight: 600;
+  background: var(--navy-primary);
+  border: 1px solid #DCAE1D;
+  color: #DCAE1D;
+  font-size: 0.75rem; font-weight: 700;
   letter-spacing: 0.15em; text-transform: uppercase;
   padding: 6px 16px; border-radius: 99px;
   margin-bottom: 20px;

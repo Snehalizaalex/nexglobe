@@ -187,7 +187,7 @@
 .pc-btn:hover { background: var(--gold-gradient); color: var(--navy-dark); border-color: transparent; }
 
 /* ---- Contact Page ---- */
-.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: stretch; }
 .contact-info-card {
   background: var(--navy-gradient);
   border-radius: var(--radius-xl);
@@ -416,7 +416,7 @@
 
 /* ---- Industries Page (New Services.html) ---- */
 .ind-hero {
-  background: linear-gradient(135deg, rgba(4,9,30,0.85), rgba(7,13,40,0.85)), url('../globallll.png') center/cover no-repeat;
+  background: linear-gradient(135deg, rgba(4,9,30,0.4), rgba(7,13,40,0.4)), url('../industriesss.png') center/cover no-repeat;
   min-height: 70vh;
   display: flex; align-items: center; justify-content: flex-start;
   padding: 120px 40px;

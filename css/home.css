@@ -20,7 +20,7 @@
 .hero-slide {
   position: absolute; inset: 0;
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 1.2s ease;
@@ -44,7 +44,7 @@
   grid-template-columns: 1fr auto;
   align-items: flex-end;
   gap: 20px;
-  padding: 110px 52px 44px;
+  padding: 110px 52px 100px;
   box-sizing: border-box;
 }
 
@@ -58,10 +58,10 @@
 
 .hero-badge {
   display: inline-flex; align-items: center; gap: 10px;
-  background: rgba(212,175,55,0.12);
-  border: 1px solid rgba(212,175,55,0.35);
-  color: var(--gold-bright);
-  font-size: 0.78rem; font-weight: 600;
+  background: var(--navy-primary);
+  border: 1px solid #DCAE1D;
+  color: #DCAE1D;
+  font-size: 0.78rem; font-weight: 700;
   letter-spacing: 0.15em; text-transform: uppercase;
   padding: 8px 20px; border-radius: 99px;
   margin-bottom: 24px;
@@ -70,7 +70,7 @@
 }
 .hero-badge .dot {
   width: 6px; height: 6px; border-radius: 50%;
-  background: var(--gold-light);
+  background: #DCAE1D;
   animation: blink 2s ease-in-out infinite;
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
@@ -80,6 +80,7 @@
   font-size: clamp(2.4rem, 3.8vw, 4.2rem);
   font-weight: 700;
   color: var(--white);
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   line-height: 1.08;
   margin-bottom: 20px;
   letter-spacing: -0.01em;
@@ -118,7 +119,9 @@
 
 .hero-sub {
   font-size: clamp(0.82rem, 1.2vw, 0.96rem);
-  color: rgba(255,255,255,0.72);
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+  font-weight: 500;
   line-height: 1.7;
   max-width: 500px;
   margin-bottom: 24px;
@@ -546,3 +549,31 @@
 
 
 
+
+/* ---- CTA Section Layout ---- */
+.cta-flex-container {
+  display: flex; align-items: stretch; gap: 0; padding: 0; overflow: hidden;
+}
+.cta-text-col {
+  flex: 1; min-width: 0; display: flex; align-items: center; justify-content: center;
+  padding: 80px 60px; position: relative; z-index: 2;
+}
+.cta-img-col {
+  flex: 0 0 45%; position: relative; overflow: hidden; min-height: 420px;
+}
+
+@media (max-width: 900px) {
+  .cta-flex-container {
+    flex-direction: column;
+  }
+  .cta-img-col {
+    flex: none; width: 100%; min-height: 350px;
+  }
+  .cta-text-col {
+    padding: 60px 30px;
+  }
+}
+@media (max-width: 600px) {
+  .cta-text-col { padding: 50px 20px; }
+  .cta-img-col { min-height: 280px; }
+}
