@@ -455,6 +455,7 @@
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
+  font-size: 22px;
 }
 .icf-icon svg { width: 24px; height: 24px; fill: var(--gold-light); }
 .icf-header h4 { font-size: 0.9rem; font-weight: 800; color: var(--navy-primary); line-height: 1.3; }
@@ -539,8 +540,8 @@
 .ifs-item { text-align: center; }
 .ifs-icon { width: 48px; height: 48px; margin: 0 auto 16px; color: var(--gold-primary); }
 .ifs-icon svg { width: 100%; height: 100%; fill: currentColor; }
-.ifs-item h5 { font-size: 0.7rem; font-weight: 800; color: var(--navy-primary); margin-bottom: 8px; line-height: 1.4; text-transform: uppercase; }
-.ifs-item p { font-size: 0.65rem; color: var(--text-light); line-height: 1.5; }
+.ifs-item h5 { font-size: 1rem; font-weight: 800; color: var(--navy-primary); margin-bottom: 8px; line-height: 1.4; text-transform: uppercase; }
+.ifs-item p { font-size: 0.9rem; color: var(--text-light); line-height: 1.5; }
 
 @media (max-width: 1024px) {
   .ind-cards-grid { grid-template-columns: repeat(2, 1fr); }
