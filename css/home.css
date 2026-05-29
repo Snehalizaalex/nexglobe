@@ -33,12 +33,7 @@
 /* Neutral dark overlay — NO blue tint, preserves true image colours */
 .hero-bg-overlay {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(
-    105deg,
-    rgba(0,0,0,0.85) 0%,
-    rgba(0,0,0,0.75) 45%,
-    rgba(0,0,0,0.5) 100%
-  );
+  background: none;
 }
 
 /* ---- Hero body: left text + right cards ---- */
@@ -90,10 +85,7 @@
   letter-spacing: -0.01em;
 }
 .gold-text {
-  background: var(--gold-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #DCAE1D;
 }
 
 .hero-btns {
@@ -146,8 +138,7 @@
 .hero-stat-item .stat-num {
   display: block;
   font-size: 1.7rem; font-weight: 800;
-  background: var(--gold-gradient);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  color: #DCAE1D;
   margin-bottom: 2px;
   line-height: 1;
 }
@@ -452,8 +443,7 @@
 .stat-item:last-child { border-right: none; }
 .si-num {
   display: block; font-size: 3rem; font-weight: 800;
-  background: var(--gold-gradient);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  color: #DCAE1D;
   margin-bottom: 8px;
 }
 .si-label { font-size: 0.9rem; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }

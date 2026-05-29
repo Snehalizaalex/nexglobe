@@ -89,7 +89,7 @@ button { cursor: pointer; border: none; outline: none; }
 .nav-brand { display: flex; flex-direction: column; }
 .nav-brand-name {
   font-size: 1.3rem; font-weight: 800; letter-spacing: 0.12em;
-  background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  color: #DCAE1D;
   line-height: 1;
 }
 .nav-brand-tag { font-size: 0.55rem; letter-spacing: 0.2em; color: rgba(212,175,55,0.7); text-transform: uppercase; margin-top: 3px; }
@@ -153,7 +153,7 @@ section { padding: 60px 40px; }
   color: var(--navy-primary);
   margin-bottom: 16px;
 }
-.section-title .gold { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.section-title .gold { color: #DCAE1D; }
 .section-subtitle {
   font-size: 1.05rem; color: var(--text-light);
   max-width: 600px; line-height: 1.7;
@@ -320,7 +320,7 @@ section { padding: 60px 40px; }
   font-weight: 700; color: var(--white);
   line-height: 1.1; margin-bottom: 16px;
 }
-.page-hero h1 span { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.page-hero h1 span { color: #DCAE1D; }
 .page-hero p { font-size: 1.1rem; color: rgba(255,255,255,0.7); max-width: 600px; }
 
 /* ---- Responsive ---- */
