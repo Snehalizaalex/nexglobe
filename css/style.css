@@ -89,10 +89,10 @@ button { cursor: pointer; border: none; outline: none; }
 .nav-brand { display: flex; flex-direction: column; }
 .nav-brand-name {
   font-size: 1.8rem; font-weight: 800; letter-spacing: 0.12em;
-  color: #DCAE1D;
+  color: #C8960C;
   line-height: 1;
 }
-.nav-brand-tag { font-size: 0.75rem; letter-spacing: 0.2em; color: rgba(212,175,55,0.7); text-transform: uppercase; margin-top: 4px; }
+.nav-brand-tag { font-size: 0.75rem; letter-spacing: 0.2em; color: #C8960C; text-transform: uppercase; margin-top: 4px; }
 
 .nav-links { display: flex; align-items: center; gap: 8px; }
 .nav-links a {

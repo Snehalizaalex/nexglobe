@@ -9,18 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navToggle = document.getElementById('nav-toggle');
   const navLinks = document.querySelector('.nav-links');
 
-  const handleNavbarScroll = () => {
-    if (!navbar) return;
-    if (window.scrollY > 50) {
-      navbar.classList.add('scrolled');
-      navbar.classList.remove('transparent');
-    } else {
-      navbar.classList.remove('scrolled');
-      navbar.classList.add('transparent');
-    }
-  };
-  window.addEventListener('scroll', handleNavbarScroll, { passive: true });
-  handleNavbarScroll();
+
 
   if (navToggle && navLinks) {
     navToggle.addEventListener('click', () => {
