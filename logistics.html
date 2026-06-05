@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -51,7 +51,7 @@
       <p class="section-subtitle reveal delay-2">End-to-end logistics solutions tailored for international businesses across all modes of transport.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal delay-1">
+      <div class="service-card reveal delay-1" id="air-freight">
         <div class="sc-icon-wrap">
           <div class="sc-img" style="background-image:url('flight.jpeg')"></div>
           <svg viewBox="0 0 48 48" fill="none"><path d="M6 32h36M10 32V20h28v12M14 20V14h20v6M24 20v12M6 32l4 8h28l4-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 14l6-8 6 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -61,7 +61,7 @@
           <p>Fast international cargo transportation with reliable global airline partnerships. Ideal for time-sensitive shipments worldwide.</p>
         </div>
       </div>
-      <div class="service-card reveal delay-2">
+      <div class="service-card reveal delay-2" id="sea-freight">
         <div class="sc-icon-wrap">
           <div class="sc-img" style="background-image:url('images/sea_freight_card.png')"></div>
           <svg viewBox="0 0 48 48" fill="none"><path d="M4 32h40M8 32V20h32v12M12 20l4-10h16l4 10M12 32v4M36 32v4M24 20v12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="38" r="3" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="38" r="3" stroke="currentColor" stroke-width="2"/></svg>
@@ -71,7 +71,7 @@
           <p>Full Container Load and Less Container Load solutions worldwide. Cost-effective ocean freight for any cargo volume.</p>
         </div>
       </div>
-      <div class="service-card reveal delay-3">
+      <div class="service-card reveal delay-3" id="road-freight">
         <div class="sc-icon-wrap">
           <div class="sc-img" style="background-image:url('road.jpeg')"></div>
           <svg viewBox="0 0 48 48" fill="none"><rect x="2" y="18" width="36" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M38 26h6l4 4v4h-10V26z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="10" cy="38" r="4" stroke="currentColor" stroke-width="2"/><circle cx="30" cy="38" r="4" stroke="currentColor" stroke-width="2"/><circle cx="42" cy="38" r="4" stroke="currentColor" stroke-width="2"/></svg>
@@ -81,7 +81,7 @@
           <p>Efficient regional and cross-border transportation across UAE, GCC countries and beyond. Full and partial truck loads available.</p>
         </div>
       </div>
-      <div class="service-card reveal delay-1">
+      <div class="service-card reveal delay-1" id="customs-clearance">
         <div class="sc-icon-wrap">
           <div class="sc-img" style="background-image:url('custom.jpeg')"></div>
           <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="28" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 18h16M16 24h16M16 30h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 18h40M8 14h40" stroke="currentColor" stroke-width="2"/></svg>
@@ -195,19 +195,33 @@
     <div>
       <p class="footer-heading">Services</p>
       <ul class="footer-links">
-        <li><a href="logistics.html">Air Freight</a></li>
-        <li><a href="logistics.html">Sea Freight</a></li>
-        <li><a href="logistics.html">Road Freight</a></li>
-        <li><a href="logistics.html">Customs Clearance</a></li>
+        <li><a href="logistics.html#air-freight">Air Freight</a></li>
+        <li><a href="logistics.html#sea-freight">Sea Freight</a></li>
+        <li><a href="logistics.html#road-freight">Road Freight</a></li>
+        <li><a href="logistics.html#customs-clearance">Customs Clearance</a></li>
         <li><a href="logistics.html">Warehousing</a></li>
         <li><a href="trading.html">Global Sourcing</a></li>
       </ul>
     </div>
     <div class="footer-contact">
-      <p class="footer-heading">Contact</p>
+      <p class="footer-heading">C O N T A C T</p>
+
+      <p style="color: var(--gold-light); font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; margin-top: 12px;">
+        For Logistics Service</p>
+      <p><span class="fc-icon">&#9679;</span> Mob: +971 58 618 9889</p>
+      <p><span class="fc-icon">&#9679;</span> Email: Info@nexglobeint.com</p>
+
+      <p style="color: var(--gold-light); font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; margin-top: 12px;">
+        For Trading Service</p>
+      <p><span class="fc-icon">&#9679;</span> Mob: +971 58 608 9889</p>
+      <p><span class="fc-icon">&#9679;</span> Email: Info@nexglobeint.com</p>
+
+      <p style="color: var(--gold-light); font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; margin-top: 12px;">
+        Our Office</p>
       <p><span class="fc-icon">&#9679;</span> Dubai, United Arab Emirates</p>
-      <p><span class="fc-icon">&#9679;</span> +971 58 618 9889 | +971 58 608 9889</p>
-      <p><span class="fc-icon">&#9679;</span> Info@nexglobeint.com</p>
+
+      <p style="color: var(--gold-light); font-weight: 600; font-size: 0.9rem; margin-bottom: 4px; margin-top: 12px;">
+        Business Hours</p>
       <p><span class="fc-icon">&#9679;</span> Mon – Sat: 9:00 AM – 6:00 PM</p>
     </div>
   </div>
@@ -222,5 +236,6 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
 
 

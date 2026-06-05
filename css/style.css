@@ -128,9 +128,10 @@ button { cursor: pointer; border: none; outline: none; }
 .nav-toggle {
   display: none;
   flex-direction: column; gap: 5px;
-  background: none; padding: 4px;
+  background: #EFCB68; padding: 10px;
+  border-radius: 6px;
 }
-.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--gold-light); border-radius: 99px; transition: var(--transition); }
+.nav-toggle span { display: block; width: 22px; height: 2px; background: #111; border-radius: 99px; transition: var(--transition); }
 
 /* ---- Sections ---- */
 section { padding: 60px 40px; }
@@ -331,6 +332,9 @@ section { padding: 60px 40px; }
 }
 @media (max-width: 768px) {
   :root { --navbar-h: 70px; }
+  .nav-logo img { height: 45px; }
+  .nav-brand-name { font-size: 1.3rem; }
+  .nav-brand-tag { font-size: 0.6rem; }
   .nav-links { 
     display: flex; flex-direction: column; gap: 8px;
     position: fixed; top: 0; right: -320px;
