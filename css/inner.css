@@ -99,23 +99,32 @@
 .sc-icon-wrap::before {
   content: '';
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(135deg, rgba(4,9,30,0.62), rgba(4,9,30,0.42));
+  background: linear-gradient(135deg, rgba(4,9,30,0.72), rgba(4,9,30,0.52));
+  transition: opacity 0.5s ease;
 }
 /* Gold radial glow */
 .sc-icon-wrap::after {
   content: '';
   position: absolute; inset: 0; z-index: 2;
   background: radial-gradient(circle at 50% 60%, rgba(212,175,55,0.18), transparent 65%);
+  transition: opacity 0.5s ease;
 }
 .sc-icon-wrap svg {
   position: relative; z-index: 3;
   width: 52px; height: 52px;
   stroke: var(--gold-light); stroke-width: 1.6; fill: none;
   filter: drop-shadow(0 2px 8px rgba(212,175,55,0.5));
+  transition: opacity 0.5s ease;
+}
+
+.service-card:hover .sc-icon-wrap::before,
+.service-card:hover .sc-icon-wrap::after,
+.service-card:hover .sc-icon-wrap svg {
+  opacity: 0;
 }
 .sc-body { padding: 28px; }
 .sc-body h3 { font-size: 1.1rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 10px; }
-.sc-body p { font-size: 0.88rem; color: var(--text-light); line-height: 1.7; margin-bottom: 20px; }
+.sc-body p { font-size: 0.88rem; color: var(--navy-primary); line-height: 1.7; margin-bottom: 20px; }
 .sc-link {
   display: inline-flex; align-items: center; gap: 6px;
   font-size: 0.85rem; font-weight: 600;
@@ -252,7 +261,7 @@
   text-align: center;
 }
 .about-text-block p {
-  color: var(--text-light);
+  color: var(--navy-primary);
   line-height: 1.9;
   font-size: 1rem;
   margin-bottom: 20px;
@@ -362,7 +371,7 @@
 }
 .wcu-card p {
   font-size: 0.83rem;
-  color: var(--text-light);
+  color: var(--navy-primary);
   line-height: 1.75;
   flex: 1;
 }
