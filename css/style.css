@@ -156,7 +156,7 @@ section { padding: 60px 40px; }
 }
 .section-title .gold { color: #DCAE1D; }
 .section-subtitle {
-  font-size: 1.05rem; color: var(--text-light);
+  font-size: 1.05rem; color: var(--navy-primary);
   max-width: 600px; line-height: 1.7;
 }
 .section-header { text-align: center; margin-bottom: 32px; }
@@ -186,6 +186,16 @@ section { padding: 60px 40px; }
 .btn-outline:hover { background: rgba(212,175,55,0.1); border-color: var(--gold-light); transform: translateY(-3px); }
 .btn-navy { background: var(--navy-gradient); color: var(--white); box-shadow: var(--shadow-md); }
 .btn-navy:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.btn-wa {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 32px;
+  background: var(--gold-gradient);
+  color: var(--navy-dark); font-weight: 600; font-size: 0.95rem;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-gold);
+  transition: var(--transition);
+}
+.btn-wa:hover { transform: translateY(-3px); box-shadow: var(--shadow-gold-lg); filter: brightness(1.05); }
 
 /* ---- Glassmorphism Card ---- */
 .glass-card {

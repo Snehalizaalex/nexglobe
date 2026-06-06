@@ -326,7 +326,7 @@
 .why-card:hover .why-icon-wrap { background: var(--gold-gradient); border-color: transparent; box-shadow: var(--shadow-gold); }
 .why-card:hover .why-icon { color: var(--navy-dark); }
 .why-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--navy-primary); margin-bottom: 12px; }
-.why-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; }
+.why-card p { font-size: 0.9rem; color: var(--navy-primary); line-height: 1.7; }
 .why-card-glow {
   position: absolute;
   width: 150px; height: 150px; border-radius: 50%;
@@ -508,16 +508,7 @@
 }
 .cta-sub { font-size: 1.05rem; color: rgba(255,255,255,0.65); margin-bottom: 48px; max-width: 560px; margin-left: auto; margin-right: auto; }
 .cta-btns { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
-.btn-wa {
-  display: inline-flex; align-items: center; gap: 10px;
-  padding: 14px 32px;
-  background: #25D366;
-  color: white; font-weight: 600; font-size: 0.95rem;
-  border-radius: var(--radius-sm);
-  box-shadow: 0 8px 32px rgba(37,211,102,0.3);
-  transition: var(--transition);
-}
-.btn-wa:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(37,211,102,0.5); }
+
 
 /* ---- Responsive ---- */
 @media (max-width: 1400px) {
