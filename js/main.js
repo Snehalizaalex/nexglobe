@@ -173,6 +173,26 @@ document.addEventListener('DOMContentLoaded', () => {
       const original = btn.textContent;
       btn.textContent = '✓ Inquiry Sent!';
       btn.style.background = 'linear-gradient(135deg, #22c55e, #16a34a)';
+
+      // Open email client
+      const name = document.getElementById('name')?.value || '';
+      const company = document.getElementById('company')?.value || '';
+      const phone = document.getElementById('phone')?.value || '';
+      const email = document.getElementById('email')?.value || '';
+      const service = document.getElementById('service')?.value || '';
+      const msg = document.getElementById('message')?.value || '';
+      
+      const subject = encodeURIComponent(`New Inquiry from ${name} (${company})`);
+      const body = encodeURIComponent(
+        `Name: ${name}\n` +
+        `Company: ${company}\n` +
+        `Phone: ${phone}\n` +
+        `Email: ${email}\n` +
+        `Service: ${service}\n\n` +
+        `Message:\n${msg}`
+      );
+      window.location.href = `mailto:Info@nexglobeint.com?subject=${subject}&body=${body}`;
+
       setTimeout(() => {
         btn.textContent = original;
         btn.style.background = '';
