@@ -351,10 +351,10 @@ section { padding: 60px 40px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
 }
 @media (max-width: 768px) {
-  :root { --navbar-h: 70px; }
-  .nav-logo img { height: 60px; }
-  .nav-brand-name { font-size: 1.3rem; }
-  .nav-brand-tag { font-size: 0.6rem; }
+  :root { --navbar-h: 100px; }
+  .nav-logo img { height: 110px; margin-left: -10px; }
+  .nav-brand-name { font-size: 1.45rem; }
+  .nav-brand-tag { font-size: 0.7rem; }
   .nav-links { 
     display: flex; flex-direction: column; gap: 8px;
     position: fixed; top: 0; right: -320px;
