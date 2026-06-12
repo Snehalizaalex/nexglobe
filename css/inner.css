@@ -575,7 +575,8 @@
 @media (max-width: 640px) {
   .ind-cards-grid { grid-template-columns: 1fr; }
   .ibc-content { grid-template-columns: 1fr; }
-  .ifs-grid { grid-template-columns: repeat(2, 1fr); }
+  .ifs-grid { grid-template-columns: 1fr; gap: 20px; }
+  .ind-feature-strip { padding: 50px 20px; }
 }
 
 
