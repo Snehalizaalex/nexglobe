@@ -86,7 +86,7 @@ button { cursor: pointer; border: none; outline: none; }
 .nav-container { display: flex; align-items: center; justify-content: space-between; width: 100%; max-width: 1400px; margin: 0 auto; }
 .nav-logo { display: flex; align-items: center; gap: 12px; }
 .nav-logo img { height: 100px; width: auto; }
-.nav-brand { display: flex; flex-direction: column; }
+.nav-brand { display: none; flex-direction: column; }
 .nav-brand-name {
   font-size: 1.8rem; font-weight: 800; letter-spacing: 0.12em;
   background: var(--gold-gradient-h);
