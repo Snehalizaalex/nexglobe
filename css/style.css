@@ -87,6 +87,25 @@ button { cursor: pointer; border: none; outline: none; }
 .nav-logo { display: flex; align-items: center; gap: 12px; }
 .nav-logo img { height: 60px; width: auto; }
 .nav-brand { display: none; flex-direction: column; }
+.nav-brand-text { display: flex; flex-direction: column; line-height: 1.2; }
+.nav-brand-main {
+  font-size: 1rem; font-weight: 800; letter-spacing: 0.1em;
+  background: var(--gold-gradient-h);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.nav-brand-sub {
+  font-size: 0.65rem; letter-spacing: 0.18em;
+  background: var(--gold-gradient-h);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
 .nav-brand-name {
   font-size: 1.8rem; font-weight: 800; letter-spacing: 0.12em;
   background: var(--gold-gradient-h);
@@ -355,6 +374,8 @@ section { padding: 60px 40px; }
   .nav-logo img { height: 55px; margin-left: 0; }
   .nav-brand-name { font-size: 1.45rem; }
   .nav-brand-tag { font-size: 0.7rem; }
+  .nav-brand-main { font-size: 0.75rem; }
+  .nav-brand-sub { font-size: 0.55rem; }
   .nav-links { 
     display: flex; flex-direction: column; gap: 8px;
     position: fixed; top: 0; right: -320px;
