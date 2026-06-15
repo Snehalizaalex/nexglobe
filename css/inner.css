@@ -99,7 +99,7 @@
 .sc-icon-wrap::before {
   content: '';
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(135deg, rgba(4,9,30,0.72), rgba(4,9,30,0.52));
+  background: transparent;
   transition: opacity 0.5s ease;
 }
 /* Gold radial glow */

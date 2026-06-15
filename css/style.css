@@ -3,7 +3,7 @@
    Trade Beyond Borders
    ===================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,600&family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,600&family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Cinzel:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/butler');
 
 /* ---- CSS Custom Properties ---- */
@@ -89,7 +89,8 @@ button { cursor: pointer; border: none; outline: none; }
 .nav-brand { display: none; flex-direction: column; }
 .nav-brand-text { display: flex; flex-direction: column; line-height: 1.2; }
 .nav-brand-main {
-  font-size: 1rem; font-weight: 800; letter-spacing: 0.1em;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem; font-weight: 700; letter-spacing: 0.1em;
   background: linear-gradient(90deg, #FFE87C 0%, #F5D060 35%, #FFD700 65%, #FFF0A0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -116,7 +117,8 @@ button { cursor: pointer; border: none; outline: none; }
   margin-top: 2px;
 }
 .nav-brand-name {
-  font-size: 1.8rem; font-weight: 800; letter-spacing: 0.12em;
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem; font-weight: 700; letter-spacing: 0.12em;
   background: var(--gold-gradient-h);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
