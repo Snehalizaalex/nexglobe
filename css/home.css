@@ -72,7 +72,7 @@
 }
 .hero-badge .dot {
   width: 6px; height: 6px; border-radius: 50%;
-  background: #DCAE1D;
+  background: #E1AD01;
   animation: blink 2s ease-in-out infinite;
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
@@ -87,7 +87,7 @@
   letter-spacing: -0.01em;
 }
 .gold-text {
-  color: #DCAE1D;
+  color: #E1AD01;
 }
 
 .hero-btns {
@@ -162,7 +162,7 @@
 .hero-stat-item .stat-num {
   display: block;
   font-size: 1.7rem; font-weight: 800;
-  color: #DCAE1D;
+  color: #E1AD01;
   margin-bottom: 2px;
   line-height: 1;
 }
@@ -442,14 +442,14 @@
   height: 100%;
 }
 .ind-card:hover {
-  border-color: #DCAE1D;
+  border-color: #E1AD01;
   box-shadow: 0 4px 15px rgba(220,174,29,0.2);
   transform: translateY(-8px);
   background: var(--navy-dark);
 }
 .ind-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; border-radius: 12px; background: linear-gradient(135deg, rgba(212,175,55,0.12), rgba(212,175,55,0.06)); border: 1px solid rgba(212,175,55,0.2); }
 .ind-icon svg { width: 24px; height: 24px; stroke: var(--gold-light); }
-.ind-card h4 { font-size: 0.88rem; font-weight: 600; color: #DCAE1D; }
+.ind-card h4 { font-size: 0.88rem; font-weight: 600; color: #E1AD01; }
 
 /* ---- Stats Banner ---- */
 #stats-banner { padding: 0; }
@@ -472,7 +472,7 @@
 .stat-item:last-child { border-right: none; }
 .si-num {
   display: block; font-size: 3rem; font-weight: 800;
-  color: #DCAE1D;
+  color: #E1AD01;
   margin-bottom: 8px;
 }
 .si-label { font-size: 0.9rem; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }

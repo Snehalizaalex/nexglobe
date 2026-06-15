@@ -4,7 +4,7 @@
 
 /* ---- Page Hero Overrides ---- */
 .page-hero { min-height: 400px; }
-.page-hero h1 span { color: #DCAE1D; }
+.page-hero h1 span { color: #E1AD01; }
 
 /* ---- About Page ---- */
 .about-intro-grid {
@@ -35,7 +35,7 @@
 .aiv-sm { width: 150px; height: 130px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .aiv-sm1 { top: 20px; left: 0; }
 .aiv-sm2 { bottom: 20px; right: 0; }
-.aiv-num { font-size: 2.2rem; font-weight: 800; color: #DCAE1D; }
+.aiv-num { font-size: 2.2rem; font-weight: 800; color: #E1AD01; }
 .aiv-label { font-size: 0.78rem; color: rgba(255,255,255,0.6); margin-top: 4px; }
 .aiv-globe { position: absolute; bottom: 0; left: 0; font-size: 6rem; opacity: 0.08; pointer-events: none; }
 
@@ -293,7 +293,7 @@
 .ast-item .aiv-num {
   font-size: 2.4rem;
   font-weight: 800;
-  color: #DCAE1D;
+  color: #E1AD01;
   line-height: 1;
   margin-bottom: 8px;
 }
