@@ -87,9 +87,9 @@ button { cursor: pointer; border: none; outline: none; }
 .nav-logo { display: flex; align-items: center; gap: 12px; }
 .nav-logo img { height: 60px; width: auto; }
 .nav-brand { display: none; flex-direction: column; }
-.nav-brand-text { display: flex; flex-direction: column; line-height: 1.2; font-family: 'Montserrat', sans-serif; }
+.nav-brand-text { display: flex; flex-direction: column; line-height: 1.2; }
 .nav-brand-main {
-  font-size: 1rem; font-weight: 600; letter-spacing: 0.1em;
+  font-size: 1rem; font-weight: 800; letter-spacing: 0.1em;
   background: linear-gradient(90deg, #FFE87C 0%, #F5D060 35%, #FFD700 65%, #FFF0A0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
