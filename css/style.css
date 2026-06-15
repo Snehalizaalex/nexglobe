@@ -90,19 +90,22 @@ button { cursor: pointer; border: none; outline: none; }
 .nav-brand-text { display: flex; flex-direction: column; line-height: 1.2; }
 .nav-brand-main {
   font-size: 1rem; font-weight: 800; letter-spacing: 0.1em;
-  background: var(--gold-gradient-h);
+  background: linear-gradient(90deg, #FFE87C 0%, #F5D060 35%, #FFD700 65%, #FFF0A0 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--gold-light);
+  background-clip: text;
+  color: #FFE87C;
   text-transform: uppercase;
   white-space: nowrap;
+  filter: drop-shadow(0 0 6px rgba(255,215,0,0.35));
 }
 .nav-brand-sub {
   font-size: 0.65rem; letter-spacing: 0.18em;
-  background: var(--gold-gradient-h);
+  background: linear-gradient(90deg, #FFE87C 0%, #F5D060 50%, #FFD700 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--gold-light);
+  background-clip: text;
+  color: #FFE87C;
   text-transform: uppercase;
   margin-top: 2px;
 }
