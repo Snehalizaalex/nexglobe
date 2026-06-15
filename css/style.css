@@ -99,6 +99,12 @@ button { cursor: pointer; border: none; outline: none; }
   white-space: nowrap;
   filter: drop-shadow(0 0 6px rgba(255,215,0,0.35));
 }
+.nav-brand-main .text-silver {
+  color: #E2E8F0;
+  -webkit-text-fill-color: #E2E8F0;
+  background: none;
+  filter: none;
+}
 .nav-brand-sub {
   font-size: 0.65rem; letter-spacing: 0.18em;
   background: linear-gradient(90deg, #FFE87C 0%, #F5D060 50%, #FFD700 100%);
