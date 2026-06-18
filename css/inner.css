@@ -104,17 +104,10 @@
 }
 /* Gold radial glow */
 .sc-icon-wrap::after {
-  content: '';
-  position: absolute; inset: 0; z-index: 2;
-  background: radial-gradient(circle at 50% 60%, rgba(212,175,55,0.18), transparent 65%);
-  transition: opacity 0.5s ease;
+  display: none;
 }
 .sc-icon-wrap svg {
-  position: relative; z-index: 3;
-  width: 52px; height: 52px;
-  stroke: var(--gold-light); stroke-width: 1.6; fill: none;
-  filter: drop-shadow(0 2px 8px rgba(212,175,55,0.5));
-  transition: opacity 0.5s ease;
+  display: none;
 }
 
 .service-card:hover .sc-icon-wrap::before,
@@ -389,7 +382,7 @@
 }
 .inner-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center, rgba(212,175,55,0.08), transparent 70%); }
 .inner-cta-content { position: relative; z-index: 2; max-width: 1400px; margin: 0 auto; }
-.inner-cta h2 { font-family: 'Butler', 'Bodoni Moda', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: var(--white); margin-bottom: 16px; }
+.inner-cta h2 { font-family: 'Butler', 'Didot', 'Bodoni Moda', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; color: var(--white); margin-bottom: 16px; }
 .inner-cta p { color: rgba(255,255,255,0.65); font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
 
 /* ---- Responsive ---- */
